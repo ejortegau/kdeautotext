@@ -14,6 +14,10 @@ kdeautotext depends on the following being installed and available on your syste
 1. GNU's [gawk](https://www.gnu.org/software/gawk/). It might work with other types of awk, but this has not been tested.
 1. [xdotool](https://www.semicomplete.com/projects/xdotool/) 3.20160805. Other versions might work.
 
+In addition, it uses `qdbus`, which is expected to be available just by the fact that you are running KDE applications.
+
+Notice that kdeautotext expects `Ctrl + V` to be the shortcut for pasting text. 
+
 ## Installation
 1. Clone the repo.
 1. Ensure all requirements above are met.
