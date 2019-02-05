@@ -1,0 +1,4 @@
+{
+    "done": "Done:\n{code}\n___PLACEHOLDER___\n{code}",
+    "dipc": "Done in commit ___PLACEHOLDER___.",
+}
