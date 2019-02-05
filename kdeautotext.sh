@@ -16,11 +16,16 @@ function get_expanded_text {
     echo $TEMPLATE | awk -v r="$CLIP" '{gsub(/___PLACEHOLDER___/,r)}1'
 }
 
+function set_klipper_text {
+     qdbus org.kde.klipper /klipper org.kde.klipper.klipper.setClipboardContents "$@"
+}
+
 function main {    
     SHORTCUT=$(kdialog --inputbox "Enter shortcut name:")
     RESULT=$(get_expanded_text $SHORTCUT)
     RESULT=$(echo -ne "$RESULT")
-    xdotool type --delay 0 "$RESULT"
+    set_klipper_text "$RESULT"
+    xdotool key --clearmodifiers "ctrl+v"; 
 }
 
 main
