@@ -1,5 +1,5 @@
 {
     "test": "This is my first test!",
     "done": "Done:\n{code}\n___PLACEHOLDER___\n{code}",
-    "dipc": "Done in commit ___PLACEHOLDER___.",
+    "dipc": "Done in commit ___PLACEHOLDER___."
 }
