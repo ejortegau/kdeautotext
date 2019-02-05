@@ -39,5 +39,5 @@ kdeautotext expansions are configured through templates in .autotext.conf.json. 
 }
 ```
 
-Notice that any occurrence of the string ___PLACEHOLDER___ on the expanded text template is replaced by the current contents of your clipboard. The default config file has a few examples. Add yours as desired.
+Notice that any occurrence of the string `___PLACEHOLDER___` on the expanded text template is replaced by the current contents of your clipboard. The default config file has a few examples. Add yours as desired.
 
