@@ -7,7 +7,7 @@ function read_klipper_text {
 
 function get_template_from_action {
     test -e ~/.autotext.conf.json || (echo No ~/.autotext.conf.json found, exiting. 1>&2 && exit 1)
-    echo $(jq ".$1" ~/.autotext.conf.json | sed 's/"//g') 
+    echo $(cat ~/.autotext.conf.json | jq ".$1" | sed 's/"//g') 
 }
 
 function get_expanded_text {
